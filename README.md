@@ -1,2 +1,2 @@
-# jared2020.github.io
+# jareD0425.github.io
 This is for my Web Design Class.
