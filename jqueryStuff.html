@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+ 	<html lang="en">
+ 	<head>
+ 	<title>Canvas Sample</title>
+ 	<meta charset="UTF-8">
+ 	<link rel="stylesheet" type="text/css" href="canvasStyles.css" media="screen">
+ 	</head>
+ 	 
+ 	<body>
+ 	<div id="mainDiv">
+ 	<header>
+ 	<h3>A Sample Canvas</h3>
+ 	</header>
+ 	 
+ 	<section>
+ 	<h4>Here is my tag:</h4>
+ 	 
+ 	<canvas id="myCanvas" width="300" height="300" style="border:1px solid #000000;">
+ 	</canvas>
+ 	</section>
+ 	 
+ 	<br><br>
+ 	<footer>
+ 	© 2020
+ 	</footer>
+ 	</div>
+ 	 
+ 	 
+ 	 
+ 	 
+ 	<script>
+ 	var c = document.getElementById('myCanvas');
+ 	var ctx = c.getContext("2d");
+ 	 
+ 	// Main face (Big circle)
+ 	 
+ 	ctx.beginPath();
+ 	ctx.arc(150, 150, 100, 0, 2 * Math.PI);
+ 	ctx.fillStyle = "pink";
+ 	ctx.fill();
+ 	ctx.stroke();
+ 	ctx.closePath();
+ 	// Smile
+ 	ctx.beginPath();
+ 	ctx.arc(150, 150, 75, 0, Math.PI);
+ 	ctx.stroke();
+ 	ctx.closePath();
+ 	// Left Eye
+ 	ctx.beginPath();
+ 	ctx.arc(105, 105, 35, 0, 2 * Math.PI);
+ 	ctx.fillStyle = "red";
+ 	ctx.fill();
+ 	ctx.stroke();
+ 	ctx.closePath();
+ 	 
+ 	 
+ 	 
+ 	// Right eye
+ 	ctx.beginPath();
+ 	ctx.arc(180, 105, 35, 0, 2 * Math.PI);
+ 	ctx.fillStyle = "yellow";
+ 	ctx.fill();
+ 	ctx.stroke();
+ 	ctx.closePath();
+ 	</script>
+ 	 
+ 	</body>
+ 	</html>
