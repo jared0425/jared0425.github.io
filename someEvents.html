@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!--
+    Author: Lisa Bosarge
+	Date: March 03, 2019
+    Course: INEW 2434-53400	
+
+    Filename: someEvents.html
+   -->
+  <meta charset="UTF-8">
+  <title>Some Events</title>  
+  <script>    
+	function showEvent(from, text) {
+		alert( from + text );}	
+	showEvent( 'Load', 'Page');
+  </script>
+</head>
+
+<body onload="showEvent('Hello Page! ', 'The page has loaded.')">	
+  <button onclick="showEvent('Ah! ', 'You clicked the button! Good for you!')" type="button">Click Me!</button>	 
+</body>
+</html>
